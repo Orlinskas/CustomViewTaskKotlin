@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<merge
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/custom_view_full_air_travel_cl"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
 
     <com.orlinskas.customviewtask.customView.AirTravelView
         android:id="@+id/custom_view_full_air_travel_travel_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
         app:cityCodeFrom="KHA"
         app:cityCodeTo="VLN"
         app:cityNameFrom="Kharkov"
@@ -21,10 +19,11 @@
         app:companyImage="@drawable/company_logo"
         app:dateFrom="5 august"
         app:dateTo="5 august"
+        app:layout_constraintTop_toTopOf="parent"
         app:raceID="M123412o"
         app:timeFrom="17:00"
         app:timeInFly="1 hour 30 minutes"
-        app:timeTo="18:30"/>
+        app:timeTo="18:30" />
 
     <com.orlinskas.customviewtask.customView.AirTravelView
         android:id="@+id/custom_view_full_air_travel_travel_2"
@@ -38,11 +37,11 @@
         app:companyImage="@drawable/company_logo"
         app:dateFrom="5 august"
         app:dateTo="5 august"
+        app:layout_constraintTop_toBottomOf="@+id/custom_view_full_air_travel_travel_1"
         app:raceID="M123412o"
         app:timeFrom="17:00"
         app:timeInFly="1 hour 30 minutes"
-        app:timeTo="18:30"
-        app:layout_constraintTop_toBottomOf="@+id/custom_view_full_air_travel_travel_1">
+        app:timeTo="18:30">
 
     </com.orlinskas.customviewtask.customView.AirTravelView>
 
@@ -53,13 +52,13 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="15dp"
-        android:layout_marginBottom="15dp"
         android:drawableStart="@android:drawable/ic_menu_compass"
         android:fontFamily="sans-serif-light"
         android:text="Не центральный аэропорт"
         android:textAlignment="center"
         android:textColor="@android:color/holo_blue_dark"
         android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/custom_view_full_air_travel_tv_travel" />
