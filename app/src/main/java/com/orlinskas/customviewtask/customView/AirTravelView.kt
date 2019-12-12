@@ -1,4 +1,4 @@
-package com.orlinskas.customviewtask
+package com.orlinskas.customviewtask.customView
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -7,9 +7,9 @@ import android.util.AttributeSet
 import android.view.View
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.constraintlayout.widget.ConstraintLayout
+import com.orlinskas.customviewtask.*
 import kotlinx.android.synthetic.main.custom_view_air_travel.view.*
 import java.util.*
-
 
 class AirTravelView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0)
     : ConstraintLayout(context, attrs, defStyleAttr), AirTravel {

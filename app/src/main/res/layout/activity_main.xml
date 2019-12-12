@@ -14,42 +14,13 @@
         android:layout_height="wrap_content"
         android:id="@+id/activity_main_cl">
 
-        <com.orlinskas.customviewtask.AirTravelView
-            android:id="@+id/activity_main_air_travel"
+        <com.orlinskas.customviewtask.customView.FullAirTravelView
+            android:id="@+id/activity_main_custom_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cityCodeFrom="KHA"
-            app:cityCodeTo="VLN"
-            app:cityNameFrom="Kharkov"
-            app:cityNameTo="Vilnius"
-            app:companyImage="@drawable/company_logo"
-            app:dateFrom="5 august"
-            app:dateTo="5 august"
-            app:layout_constraintTop_toTopOf="parent"
-            app:raceID="M123412o"
-            app:timeFrom="17:00"
-            app:timeInFly="1 hour 30 minutes"
-            app:timeTo="18:30"
-            android:onClick="travelClick1"/>
+            android:onClick="onClick"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <com.orlinskas.customviewtask.AirTravelView
-            android:id="@+id/activity_main_air_travel2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            app:cityCodeFrom="KHA"
-            app:cityCodeTo="VLN"
-            app:cityNameFrom="Kharkov"
-            app:cityNameTo="Vilnius"
-            app:companyImage="@drawable/company_logo"
-            app:dateFrom="5 august"
-            app:dateTo="5 august"
-            app:layout_constraintTop_toBottomOf="@+id/activity_main_air_travel"
-            app:raceID="M123412o"
-            app:timeFrom="17:00"
-            app:timeInFly="1 hour 30 minutes"
-            app:timeTo="18:30"
-            android:onClick="travelClick2"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

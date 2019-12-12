@@ -3,36 +3,19 @@ package com.orlinskas.customviewtask
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.orlinskas.customviewtask.customView.FullAirTravel
 
 class MainActivity : AppCompatActivity() {
-
-    private lateinit var airTravel: AirTravel
-    private lateinit var airTravel2: AirTravel
+    private lateinit var fullAirTravel: FullAirTravel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        airTravel = findViewById<View>(R.id.activity_main_air_travel) as AirTravel
-        airTravel2 = findViewById<View>(R.id.activity_main_air_travel2) as AirTravel
+        fullAirTravel = findViewById<View>(R.id.activity_main_custom_view) as FullAirTravel
     }
 
-    private fun setContent(airTravel: AirTravel) = airTravel.apply {
-        setCityFrom(getRandomCity())
-        setCityTo(getRandomCity())
-        setRaceID("M" + randomInt(10000..99999) + "o")
-        setCompanyImage(getRandomBitmap(applicationContext))
-        val dateFrom = getRandomDate()
-        val dateTo = getRandomDate()
-        setDateFrom(dateFrom)
-        setDateTo(dateTo)
-        calculateFlyTime(dateFrom, dateTo)
+    fun onClick(view: View) {
+        fullAirTravel.rebuild(applicationContext)
     }
 
-    fun travelClick1(view: View) {
-        setContent(airTravel)
-    }
-
-    fun travelClick2(view: View) {
-        setContent(airTravel2)
-    }
 }

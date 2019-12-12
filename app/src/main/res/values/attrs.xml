@@ -14,4 +14,10 @@
         <attr name="dateTo" format="string" />
         <attr name="timeInFly" format="string" />
     </declare-styleable>
+
+    <declare-styleable name="FullAirTravelView">
+        <attr name="firstAirport" format="string" />
+        <attr name="secondAirport" format="string" />
+    </declare-styleable>
+
 </resources>

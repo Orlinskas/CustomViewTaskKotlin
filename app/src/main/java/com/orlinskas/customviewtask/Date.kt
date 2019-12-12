@@ -11,7 +11,6 @@ const val DD_MM = "dd-MM";
 const val MM_SS = "mm:ss";
 const val HH_MM = "HH:mm";
 
-
 @SuppressLint("SimpleDateFormat")
 fun dateToString(date: Date, format: String) : String {
     return SimpleDateFormat(format).format(date)

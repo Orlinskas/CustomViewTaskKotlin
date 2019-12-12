@@ -1,6 +1,7 @@
-package com.orlinskas.customviewtask
+package com.orlinskas.customviewtask.customView
 
 import android.graphics.Bitmap
+import com.orlinskas.customviewtask.City
 import java.util.*
 
 interface AirTravel {
