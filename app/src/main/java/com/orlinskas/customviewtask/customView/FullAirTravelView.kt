@@ -41,15 +41,23 @@ class FullAirTravelView @JvmOverloads constructor(context: Context, attrs: Attri
         invalidate()
     }
 
-    private fun setContent(context: Context, airTravel: AirTravel) = airTravel.apply {
-        setCityFrom(getRandomCity())
-        setCityTo(getRandomCity())
-        setRaceID("M" + randomInt(10000..99999) + "o")
-        setCompanyImage(getRandomBitmap(context))
-        val dateFrom = getRandomDate()
-        val dateTo = getRandomDate()
-        setDateFrom(dateFrom)
-        setDateTo(dateTo)
-        calculateFlyTime(dateFrom, dateTo)
+    private fun setContent(context: Context, airTravel: AirTravel) {
+        val cityFrom = getRandomCity()
+        val cityTo = getRandomCity()
+        airTravel.apply {
+            setCityFrom(cityFrom)
+            setCityTo(cityTo)
+            setRaceID("M" + randomInt(10000..99999) + "o")
+            setCompanyImage(getRandomBitmap(context))
+            val dateFrom = getRandomDate()
+            val dateTo = getRandomDate()
+            setDateFrom(dateFrom)
+            setDateTo(dateTo)
+            calculateFlyTime(dateFrom, dateTo)
+        }
+
+        setFirstAirport("Центральный аэропорт " + cityFrom.fullName)
+        setSecondAirport("Не центральный аэропорт " + cityTo.fullName)
     }
+
 }
