@@ -13,9 +13,19 @@
         <attr name="dateFrom" format="string" />
         <attr name="dateTo" format="string" />
         <attr name="timeInFly" format="string" />
-    </declare-styleable>
 
-    <declare-styleable name="FullAirTravelView">
+        <attr name="companyImageBot" format="reference" />
+        <attr name="raceIDBot" format="string" />
+        <attr name="cityCodeFromBot" format="string" />
+        <attr name="cityCodeToBot" format="string" />
+        <attr name="cityNameFromBot" format="string" />
+        <attr name="cityNameToBot" format="string" />
+        <attr name="timeFromBot" format="string" />
+        <attr name="timeToBot" format="string" />
+        <attr name="dateFromBot" format="string" />
+        <attr name="dateToBot" format="string" />
+        <attr name="timeInFlyBot" format="string" />
+
         <attr name="firstAirport" format="string" />
         <attr name="secondAirport" format="string" />
     </declare-styleable>
