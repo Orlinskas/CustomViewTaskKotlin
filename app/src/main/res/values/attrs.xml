@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <declare-styleable name="AirTravelView">
+        <attr name="companyImage" format="reference" />
+        <attr name="raceID" format="string" />
+        <attr name="cityCodeFrom" format="string" />
+        <attr name="cityCodeTo" format="string" />
+        <attr name="cityNameFrom" format="string" />
+        <attr name="cityNameTo" format="string" />
+        <attr name="timeFrom" format="string" />
+        <attr name="timeTo" format="string" />
+        <attr name="dateFrom" format="string" />
+        <attr name="dateTo" format="string" />
+        <attr name="timeInFly" format="string" />
+    </declare-styleable>
+</resources>

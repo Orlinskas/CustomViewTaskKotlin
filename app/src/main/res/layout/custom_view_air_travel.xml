@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <TextView
+        android:id="@+id/custom_view_air_travel_tv_date2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/custom_view_air_travel_iv_plane"
+        app:layout_constraintTop_toBottomOf="@+id/custom_view_air_travel_tv_city_to_time" />
+
+    <TextView
+        android:id="@+id/custom_view_air_travel_tv_city_to_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="monospace"
+        android:text="Time"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/custom_view_air_travel_iv_plane"
+        app:layout_constraintTop_toBottomOf="@+id/custom_view_air_travel_tv_city_to_name" />
+
+    <TextView
+        android:id="@+id/custom_view_air_travel_tv_city_to_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="CityName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/custom_view_air_travel_iv_plane"
+        app:layout_constraintTop_toBottomOf="@+id/custom_view_air_travel_tv_city_to_code" />
+
+    <ImageView
+        android:id="@+id/custom_view_air_travel_iv_companyLogo"
+        android:layout_width="89dp"
+        android:layout_height="51dp"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription"
+        tools:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/custom_viev_air_travel_race_id"
+        android:layout_width="151dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="#AAE0A4"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="251dp" />
+
+    <TextView
+        android:id="@+id/custom_view_air_travel_tv_city_from_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="monospace"
+        android:text="CODE"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/custom_view_air_travel_iv_plane"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/custom_view_air_travel_iv_companyLogo" />
+
+    <ImageView
+        android:id="@+id/custom_view_air_travel_iv_plane"
+        android:layout_width="99dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/custom_view_air_travel_iv_companyLogo"
+        app:srcCompat="@drawable/im_plane" />
+
+    <TextView
+        android:id="@+id/custom_view_air_travel_tv_city_to_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="monospace"
+        android:text="CODE"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/custom_view_air_travel_iv_plane"
+        app:layout_constraintTop_toBottomOf="@+id/custom_view_air_travel_iv_companyLogo" />
+
+    <TextView
+        android:id="@+id/custom_view_air_travel_tv_city_from_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="CityName"
+        app:layout_constraintEnd_toStartOf="@+id/custom_view_air_travel_iv_plane"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/custom_view_air_travel_tv_city_from_code" />
+
+    <TextView
+        android:id="@+id/custom_view_air_travel_tv_city_from_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="monospace"
+        android:text="Time"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/custom_view_air_travel_iv_plane"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/custom_view_air_travel_tv_city_from_name" />
+
+    <TextView
+        android:id="@+id/custom_view_air_travel_tv_time_in_fly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="1 hour"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/custom_view_air_travel_iv_plane" />
+
+    <TextView
+        android:id="@+id/custom_view_air_travel_tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="date"
+        app:layout_constraintEnd_toStartOf="@+id/custom_view_air_travel_iv_plane"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/custom_view_air_travel_tv_city_from_time" />
+
+</merge>

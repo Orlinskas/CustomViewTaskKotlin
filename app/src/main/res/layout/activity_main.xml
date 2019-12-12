@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_main_cl">
+
+        <com.orlinskas.customviewtask.AirTravelView
+            android:id="@+id/activity_main_air_travel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cityCodeFrom="KHA"
+            app:cityCodeTo="VLN"
+            app:cityNameFrom="Kharkov"
+            app:cityNameTo="Vilnius"
+            app:companyImage="@drawable/company_logo"
+            app:dateFrom="5 august"
+            app:dateTo="5 august"
+            app:layout_constraintTop_toTopOf="parent"
+            app:raceID="M123412o"
+            app:timeFrom="17:00"
+            app:timeInFly="1 hour 30 minutes"
+            app:timeTo="18:30"
+            android:onClick="travelClick1"/>
+
+        <com.orlinskas.customviewtask.AirTravelView
+            android:id="@+id/activity_main_air_travel2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:cityCodeFrom="KHA"
+            app:cityCodeTo="VLN"
+            app:cityNameFrom="Kharkov"
+            app:cityNameTo="Vilnius"
+            app:companyImage="@drawable/company_logo"
+            app:dateFrom="5 august"
+            app:dateTo="5 august"
+            app:layout_constraintTop_toBottomOf="@+id/activity_main_air_travel"
+            app:raceID="M123412o"
+            app:timeFrom="17:00"
+            app:timeInFly="1 hour 30 minutes"
+            app:timeTo="18:30"
+            android:onClick="travelClick2"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
