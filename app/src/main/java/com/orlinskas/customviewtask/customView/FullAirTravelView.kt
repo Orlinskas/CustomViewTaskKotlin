@@ -47,7 +47,7 @@ class FullAirTravelView @JvmOverloads constructor(context: Context, attrs: Attri
         airTravel.apply {
             setCityFrom(cityFrom)
             setCityTo(cityTo)
-            setRaceID("M" + randomInt(10000..99999) + "o")
+            setRaceID(" Регулярный - " + "M" + randomInt(10000..99999) + "k ")
             setCompanyImage(getRandomBitmap(context))
             val dateFrom = getRandomDate()
             val dateTo = getRandomDate()

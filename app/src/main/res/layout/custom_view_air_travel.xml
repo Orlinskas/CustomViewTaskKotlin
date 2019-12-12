@@ -46,7 +46,7 @@
         android:id="@+id/custom_view_air_travel_iv_companyLogo"
         android:layout_width="89dp"
         android:layout_height="51dp"
-        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="ContentDescription"
@@ -54,15 +54,14 @@
 
     <TextView
         android:id="@+id/custom_viev_air_travel_race_id"
-        android:layout_width="151dp"
-        android:layout_height="23dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:background="#AAE0A4"
         android:text="TextView"
         android:textAlignment="center"
         android:textColor="@android:color/black"
-        android:textStyle="bold"
+        android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="251dp" />
@@ -151,5 +150,13 @@
         app:layout_constraintEnd_toStartOf="@+id/custom_view_air_travel_iv_plane"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/custom_view_air_travel_tv_city_from_time" />
+
+    <View
+        android:id="@+id/сustom_view_air_travel_divider"
+        style="@style/Divider"
+        android:layout_margin="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/custom_view_air_travel_tv_date2"
+        tools:layout_editor_absoluteX="10dp" />
 
 </merge>
