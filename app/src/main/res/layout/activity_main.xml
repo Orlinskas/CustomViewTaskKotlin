@@ -22,6 +22,7 @@
             android:layout_margin="10dp"
             android:background="@drawable/custom_view_background"
             android:onClick="onClick"
+            tools:layout_editor_absoluteX="3dp"
 
             app:cityCodeFrom="KHA"
             app:cityCodeFromBot="KHA"
@@ -36,7 +37,6 @@
             app:dateFrom="5 august"
             app:dateFromBot="5 august"
             app:dateTo="5 august"
-
             app:dateToBot="5 august"
             app:layout_constraintTop_toTopOf="parent"
             app:raceID="M123412o"
@@ -47,10 +47,8 @@
             app:timeInFlyBot="1 hour 30 minutes"
             app:timeTo="18:30"
             app:timeToBot="18:30"
-            tools:layout_editor_absoluteX="3dp"
-
             app:firstAirport="Центральный аэропорт Харькова"
-            app:secondAirport="Не центральный аэропорт Харькова"/>
+            app:secondAirport="Не центральный аэропорт Харькова" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

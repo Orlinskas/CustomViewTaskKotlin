@@ -2,7 +2,7 @@ package com.orlinskas.customviewtask.customView
 
 import android.annotation.SuppressLint
 import android.content.Context
-import android.graphics.Bitmap
+import android.graphics.*
 import android.util.AttributeSet
 import android.view.View
 import androidx.appcompat.content.res.AppCompatResources
@@ -10,11 +10,17 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import com.orlinskas.customviewtask.*
 import kotlinx.android.synthetic.main.custom_view_air_travel.view.*
 import java.util.*
+import android.graphics.Paint.Align
+import android.icu.lang.UCharacter.GraphemeClusterBreak.T
+
+
 
 class AirTravelView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0)
     : ConstraintLayout(context, attrs, defStyleAttr), AirTravel {
 
     private val ta = context.obtainStyledAttributes(attrs, R.styleable.AirTravelView)
+    private var paint = Paint()
+    private var rect = Rect()
 
     init {
         init(attrs)
@@ -87,6 +93,37 @@ class AirTravelView @JvmOverloads constructor(context: Context, attrs: Attribute
         } finally {
             ta.recycle()
         }
+    }
+
+    override fun onDraw(canvas: Canvas?) {
+        super.onDraw(canvas)
+        paint.color = resources.getColor(R.color.colorCustomView);
+        rect.set((width / 2), 30, width - 30, 90)
+        canvas?.drawRect(rect, paint)
+
+        if (canvas != null) {
+            drawRectText(custom_viev_air_travel_race_id.text.toString(), canvas, rect)
+        }
+
+    }
+
+    private fun drawRectText(text: String, canvas: Canvas, r: Rect) {
+        paint.textSize = 40F
+        paint.textAlign = Align.CENTER
+        paint.color = Color.BLACK
+        val width = r.width()
+        val height = r.height()
+
+        val numOfChars = paint.breakText(text, true, width.toFloat(), null)
+        val start = (text.length - numOfChars) / 2
+        canvas.drawText(
+            text,
+            start,
+            start + numOfChars,
+            r.exactCenterX(),
+            r.exactCenterY() + (height / 4),
+            paint
+        )
     }
 
     override fun setRaceID(raceId: String, raceId2: String) {
