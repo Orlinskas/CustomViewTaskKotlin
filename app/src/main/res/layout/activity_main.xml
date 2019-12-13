@@ -15,6 +15,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <com.orlinskas.customviewtask.customView.OldCustomProgressBar
+            android:id="@+id/customProgressBar"
+            android:layout_width="53dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <com.orlinskas.customviewtask.customView.AirTravelView
             android:id="@+id/activity_main_custom_view"
             android:layout_width="match_parent"
@@ -22,9 +30,8 @@
             android:layout_margin="10dp"
             android:background="@drawable/custom_view_background"
             android:onClick="onClick"
-            tools:layout_editor_absoluteX="3dp"
-
             app:cityCodeFrom="KHA"
+
             app:cityCodeFromBot="KHA"
             app:cityCodeTo="VLN"
             app:cityCodeToBot="RIG"
@@ -38,17 +45,18 @@
             app:dateFromBot="5 august"
             app:dateTo="5 august"
             app:dateToBot="5 august"
-            app:layout_constraintTop_toTopOf="parent"
+            app:firstAirport="Центральный аэропорт Харькова"
+            app:layout_constraintTop_toBottomOf="@+id/customProgressBar"
             app:raceID="M123412o"
             app:raceIDBot="M123412o"
+            app:secondAirport="Не центральный аэропорт Харькова"
             app:timeFrom="18:00"
             app:timeFromBot="20:00"
             app:timeInFly="2 hour 10 minutes"
             app:timeInFlyBot="1 hour 30 minutes"
             app:timeTo="18:30"
             app:timeToBot="18:30"
-            app:firstAirport="Центральный аэропорт Харькова"
-            app:secondAirport="Не центральный аэропорт Харькова" />
+            tools:layout_editor_absoluteX="3dp" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

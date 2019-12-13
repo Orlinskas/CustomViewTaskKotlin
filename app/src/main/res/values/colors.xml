@@ -4,4 +4,5 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="colorCustomView">#AAE0A4</color>
+    <color name="colorCustomProgressBar">#B8052F</color>
 </resources>
