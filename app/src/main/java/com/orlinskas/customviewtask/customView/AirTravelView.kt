@@ -97,7 +97,7 @@ class AirTravelView @JvmOverloads constructor(context: Context, attrs: Attribute
 
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
-        paint.color = resources.getColor(R.color.colorCustomView);
+        paint.color = resources.getColor(R.color.colorCustomView)
         rect.set((width / 2), 30, width - 30, 90)
         canvas?.drawRect(rect, paint)
 
